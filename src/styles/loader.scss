@@ -1,3 +1,30 @@
+body{
+    background-color: $color-green;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .loaderContent{
-    background-color: $color-purple;
+    width: 100%;
+}
+
+svg{
+    opacity: 0;
+    animation: draw 0.5s ease-out;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+}
+
+@keyframes draw{
+    from {
+        width: 0;
+    }
+    to {
+        transform: scaleX(100%);
+        opacity: 1;
+    }
+    
 }
