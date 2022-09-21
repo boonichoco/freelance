@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 80px;
+}
+.content {
+  background-color: $color-purple;
+  border: 20px solid $color-green;
+  height: 100vh;
+  box-sizing: border-box;
+}
