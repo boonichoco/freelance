@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Navigation from '../components/Navigation';
 const Home = () => {
     return (
         <div className='content'>
@@ -11,7 +11,9 @@ const Home = () => {
                     Freelance <br /> à portée de clic !
                 </h1>
             </div>
-            
+            <Navigation>
+                
+            </Navigation>
         </div>
     );
 };

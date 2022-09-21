@@ -1,0 +1,49 @@
+.NavItem {
+  list-style: none;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "inter";
+  color: $color-green;
+  text-transform: uppercase;
+}
+.NavList {
+  display: flex;
+  gap: 50px;
+  padding-inline-start: 0px;
+  a {
+    color: $color-green;
+    text-decoration: none;
+
+    border-bottom: 4px dotted rgba(61, 220, 151, 1);
+    transition: border-bottom 0.5s ease;
+    position: relative;
+
+    &:hover {
+      border-bottom: 4px dotted rgba(61, 220, 151, 0);
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        background-color: $color-green;
+        height: 4px;
+        opacity: 0;
+        transform-origin: 50%;
+        animation: NavSlideIn 0.5s ease;
+        width: 100%;
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s;
+      }
+    }
+  }
+}
+@keyframes NavSlideIn {
+  from {
+    opacity: 1;
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(100%);
+    width: 100%;
+    opacity: 1;
+  }
+}
