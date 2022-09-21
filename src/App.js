@@ -5,14 +5,14 @@ import Test from "./components/Test";
 
 const App = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" elements={<Home />}/>
-                <Route path="/test" elements={<Test />}/>
-            </Routes>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/test" element={<Test />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     );
-};
-
-
-export default App;
+  };
+  
+  export default App;
