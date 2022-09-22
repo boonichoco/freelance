@@ -1,22 +1,18 @@
-.HeadTitle {
-  color: white;
+.Title {
   font-size: 128px;
   text-transform: uppercase;
   font-family: "inter";
   font-weight: 900;
   margin: 0;
 }
-.SubTitle {
+.GreenTitle {
   color: $color-green;
-  font-size: 128px;
-  text-transform: uppercase;
-  font-family: "inter";
-  font-weight: 900;
-  margin: 0;
+}
+.WhiteTitle {
+  color: white;
 }
 
-
-.Loader{
+.Loader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +22,7 @@
   background-color: $color-green;
 }
 
-.MaskLoader{
+.MaskLoader {
   background-color: $color-purple;
   height: 100%;
   width: 100%;

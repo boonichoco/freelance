@@ -1,0 +1,27 @@
+.PurpleBG {
+  width: 100%;
+}
+.BoxTitleContainer {
+  background-color: $color-purple;
+  position: absolute;
+  z-index: 5;
+  top: 5%;
+  left: -35%;
+}
+.BoxContent {
+  border: 20px solid $color-green;
+  background-color: white;
+  width: 50%;
+  margin: 150px auto;
+  padding: 200px 75px 75px;
+  position: relative;
+  p {
+    font-family: "Inter";
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 16px;
+  }
+}
+.BtnContainer {
+  text-align: right;
+}
