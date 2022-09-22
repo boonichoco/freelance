@@ -5,7 +5,7 @@ const Next = () => {
     return (
         <div>
             <Content>
-
+                
             </Content>
         </div>
     );
