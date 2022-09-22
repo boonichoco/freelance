@@ -19,7 +19,7 @@ const Home = () => {
         });
         gsap.to(q(".HeadTitle", ".SubTitle"), {
             y: 0,
-            delay: 3,
+            delay: 2.8,
             opacity: 1,
             ease: "elastic.out(1, 0.2)",
             stagger: 0.6
