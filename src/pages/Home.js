@@ -13,11 +13,11 @@ const Home = () => {
     const q = gsap.utils.selector(el);
 
     useEffect(() => {
-        gsap.from(q(".HeadTitle", ".SubTitle"), {
+        gsap.from(q(".Title", ".SubTitle"), {
             y: -500,
             opacity: 0
         });
-        gsap.to(q(".HeadTitle", ".SubTitle"), {
+        gsap.to(q(".Title", ".SubTitle"), {
             y: 0,
             delay: 2.8,
             opacity: 1,
