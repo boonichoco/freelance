@@ -8,7 +8,7 @@ const Navigation = () => {
         <div className="container">
             <nav>
                 <ul className="NavList">
-                    <NavLink to="/test">
+                    <NavLink to="/next">
                         <motion.li whileHover={{ y: -10 }} className="NavItem">
                             contact
                         </motion.li>
