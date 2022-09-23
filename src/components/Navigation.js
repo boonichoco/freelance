@@ -1,35 +1,37 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Navigation = () => {
+    const[contact, setContact] = React.useState(false);
     return (
         <div className="container">
-        <nav>
-            <ul className="NavList">
-                <NavLink to="/">
-                <li className="NavItem">
-                        contact
-                    </li>
-                </NavLink >
-                <NavLink to="/">
-                    <li className="NavItem">
-                        travaux
-                    </li>
-                    <span className="toto"></span>
-                </NavLink>
-                <NavLink to="/">
-                    <li className="NavItem">
-                        concept
-                    </li>
-                </NavLink>
-                <NavLink to="/">
-                    <li className="NavItem">
-                        compétences
-                    </li>
-                </NavLink>
-            </ul>
-        </nav>
-    </div>
+            <nav>
+                <ul className="NavList">
+                    <NavLink to="/test">
+                        <motion.li whileHover={{ y: [0,-20,-20,0] }} className="NavItem">
+                            contact
+                        </motion.li>
+                    </NavLink >
+                    <NavLink to="/">
+                        <motion.li whileHover={{ y: [0,-20,-20,0] }} className="NavItem">
+                            travaux
+                        </motion.li>
+                        <span className="toto"></span>
+                    </NavLink>
+                    <NavLink to="/">
+                        <motion.li whileHover={{ y: [0,-20,-20,0] }} className="NavItem">
+                            concept
+                        </motion.li>
+                    </NavLink>
+                    <NavLink to="/">
+                        <motion.li whileHover={{ y: [0,-20,-20,0] }} className="NavItem">
+                            compétences
+                        </motion.li>
+                    </NavLink>
+                </ul>
+            </nav>
+        </div>
     );
 };
 
