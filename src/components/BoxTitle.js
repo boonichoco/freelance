@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+
 
 function Boxtitle(props) {
     return (
@@ -13,13 +13,7 @@ function Boxtitle(props) {
                 </div>
                 <div>
                     {props.content}
-                </div>
-                <div className="BtnContainer">
-                    <NavLink to="/">
-                    <img src="./btn-next.png" alt="" />
-                    </NavLink>
-                </div>
-                
+                </div> 
             </div>
         </div>
     </div>

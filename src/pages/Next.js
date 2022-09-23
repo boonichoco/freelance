@@ -29,10 +29,9 @@ const Next = () => {
     
         <div>
              <BoxTitle
-        title={titlecontent.title}
-        content={titlecontent.content}
-        />
-           
+                title={titlecontent.title}
+                content={titlecontent.content}
+            />
         </div>
     );
 };
