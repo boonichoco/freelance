@@ -40,12 +40,13 @@
 }
 .TitleWork {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 80px;
+  bottom: 90px;
   background-color: $color-purple;
-  background-position: 0;
+  background-position: -5%;
+
   .TitleWorkContainer {
-    //padding: 25px 0 0 50px;
+    margin: 15px -10px -10px 15px;
   }
   h1 {
     color: $color-green;
