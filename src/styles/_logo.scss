@@ -1,0 +1,23 @@
+.Logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.Part{
+    background-color: $color-green;
+    width: 12px;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.Part1{
+    height: 26px;
+}
+
+.Part2{
+    height: 64px;
+}
