@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
+import { motion } from "framer-motion";
 
 
 
@@ -10,15 +11,36 @@ const Home = () => {
         <div className='content'>
             <Logo />
             <div className="container" >
-                <h1 className="Title WhiteTitle">
+                <motion.h1
+                animate={{ y: 0 }}
+                initial={{ y: -500}}
+                transition={{ type: 'spring', duration: 0.4, bounce: 0.5 }}
+                drag
+                dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                dragElastic={0.2}
+                className="Title WhiteTitle">
                     Dev-it
-                </h1>
-                <h1 className="Title GreenTitle">
+                </motion.h1>
+                <motion.h1
+                animate={{ y: 0 }}
+                initial={{ y: -1000}}
+                transition={{ type: 'spring', duration: 0.5, bounce: 0.5, delay: 0.3 }}
+                drag
+                dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                dragElastic={0.2}
+                className="Title GreenTitle">
                     Freelance
-                </h1>
-                <h1 className="Title GreenTitle">
+                </motion.h1>
+                <motion.h1
+                animate={{ y: 0 }}
+                initial={{ y: -1200}}
+                transition={{ type: 'spring', duration: 0.6, bounce: 0.5, delay: 0.6 }}
+                drag
+                dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                dragElastic={0.2}
+                className="Title GreenTitle">
                     à portée de clic !
-                </h1>
+                </motion.h1>
             </div>
             <Navigation />
         </div>
