@@ -4,9 +4,7 @@ import Logo from '../components/Logo';
 import { motion } from "framer-motion";
 
 
-
 const Home = () => {
-
     return (
         <motion.div
             initial={{ scale: 0 }}

@@ -2,6 +2,8 @@ import React from 'react';
 import Content from '../components/Content';
 import BoxTitle from '../components/BoxTitle';
 import { motion } from "framer-motion";
+import Logo from '../components/Logo';
+import Navigation from '../components/Navigation';
 
 
 const titlecontent = {
@@ -33,10 +35,11 @@ const Next = () => {
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
             transition={{ duration: 0.3 }}>
-            <BoxTitle
-                title={titlecontent.title}
-                content={titlecontent.content}
-            />
+            <div className="content">
+                <Logo />
+                <BoxTitle title={titlecontent.title} content={titlecontent.content} />
+                <Navigation />
+            </div>
         </motion.div>
     );
 };

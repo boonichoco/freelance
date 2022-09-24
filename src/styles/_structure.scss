@@ -4,9 +4,12 @@ body {
 }
 .container {
   margin: 0 80px;
+  z-index: 1;
 }
 .content {
   background-color: $color-purple;
+  background-image: url('../assets/images/playstation-pattern.webp');
+  background-blend-mode: color-burn;
   border: 20px solid $color-green;
   height: 100vh;
   box-sizing: border-box;
@@ -14,4 +17,5 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  z-index: 0;
 }

@@ -13,7 +13,7 @@ const Navigation = () => {
                             contact
                         </motion.li>
                     </NavLink >
-                    <NavLink to="/">
+                    <NavLink to="/works">
                         <motion.li whileHover={{ y: -10 }} className="NavItem">
                             travaux
                         </motion.li>
